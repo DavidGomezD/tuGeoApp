@@ -49,6 +49,15 @@ public class MainActivity extends AppCompatActivity {
         bjugar = (Button) findViewById(R.id.bjugar);
         btnInformacion = (Button) findViewById(R.id.botonInformacion);
 
+        //Eventos de click
+        bjugar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // iniciamos el cambio de actividad
+                Intent i = new Intent(MainActivity.this, juego.class);
+                startActivity(i);
+            }
+        });
 
         btnInformacion.setOnClickListener(new View.OnClickListener() {
             @Override
