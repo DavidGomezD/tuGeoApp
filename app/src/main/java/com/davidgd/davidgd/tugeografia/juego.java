@@ -507,7 +507,6 @@ public class juego extends AppCompatActivity {
             Intent i = new Intent(this, SegundaActividad.class);
             i.putExtra("MandarPuntos", Puntos.toString());
             startActivity(i);
-            overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
             //termina la actividad para que no se pueda regresar
             finish();
         }
