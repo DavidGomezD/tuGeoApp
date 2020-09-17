@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -18,6 +19,8 @@ import com.davidgd.davidgd.tugeografia.utilidades.Utilidades;
 import java.util.Random;
 
 public class SegundaActividad extends AppCompatActivity {
+
+    MediaPlayer mp;
 
     TextView TusPuntos, TuRecord;
     Button bFin;
@@ -49,12 +52,17 @@ public class SegundaActividad extends AppCompatActivity {
 
         bFin = (Button) findViewById(R.id.bFin);
 
+        //Sonido, nunca poner mayusculas en el nombre del sonido
+        mp = MediaPlayer.create(this, R.raw.clic);
+
         //Consulta de la puntuacion mas alta en la base de datos
         consultar();
 
         bFin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Activa el sonido
+                mp.start();
                 //termina la actividad para que no se pueda regresar
                 finish();
             }

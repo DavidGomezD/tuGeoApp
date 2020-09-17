@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -19,9 +21,14 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 
 public class MainActivity extends AppCompatActivity {
 
+    MediaPlayer mp;
+
     Button bjugar, btnInformacion;
 
     private AdView mAdView;
+
+    //Evita el doble clic
+    private long mLastClickTime = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,19 +56,38 @@ public class MainActivity extends AppCompatActivity {
         bjugar = (Button) findViewById(R.id.bjugar);
         btnInformacion = (Button) findViewById(R.id.botonInformacion);
 
+        //Sonido, nunca poner mayusculas en el nombre del sonido
+        mp = MediaPlayer.create(this, R.raw.clic);
+
         //Eventos de click
         bjugar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Evita el doble clic
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 1000){
+                    return; }
+                mLastClickTime = SystemClock.elapsedRealtime();
+
+                //Activa el sonido
+                mp.start();
                 // iniciamos el cambio de actividad
                 Intent i = new Intent(MainActivity.this, juego.class);
                 startActivity(i);
+
             }
         });
+
 
         btnInformacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Evita el doble clic
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 1000){
+                    return; }
+                mLastClickTime = SystemClock.elapsedRealtime();
+
+                //Activa el sonido
+                mp.start();
                 // iniciamos el cambio de actividad
                 Intent i = new Intent(MainActivity.this, informacion.class);
                 startActivity(i);
@@ -69,4 +95,5 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
 }

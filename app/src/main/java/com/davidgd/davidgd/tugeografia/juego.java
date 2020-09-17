@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -16,6 +18,12 @@ import com.davidgd.davidgd.tugeografia.utilidades.Utilidades;
 import java.util.Random;
 
 public class juego extends AppCompatActivity {
+
+    //Evita el doble clic
+    private long mLastClickTime = 0;
+
+    //Sonido
+    MediaPlayer mperror, mp;
 
     TextView Estado1, Estado2, Estado3, Capital1, Capital2, Capital3, SeleccionEstado, SeleccionCapital, Califica, Marcador, TotalVidas;
     Button BE1, BE2, BE3, BC1, BC2, BC3;
@@ -78,6 +86,10 @@ public class juego extends AppCompatActivity {
         BC2 = (Button) findViewById(R.id.button17);
         BC3 = (Button) findViewById(R.id.button18);
 
+        //Sonido, nunca poner mayusculas en el nombre del sonido
+        mperror = MediaPlayer.create(this, R.raw.error);
+        mp = MediaPlayer.create(this, R.raw.clic);
+
         //--------------------Inicia las vidas del juego--------------------
 
         IniciaVidas();
@@ -95,6 +107,9 @@ public class juego extends AppCompatActivity {
         BE1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //Sonido
+                mp.start();
                 if (Estado1.getText() == "" || Estado1.getText() == SeleccionEstado.getText()){
                     //Boton sin texto no hacer nada
                 }else {
@@ -112,6 +127,9 @@ public class juego extends AppCompatActivity {
         BE2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //Sonido
+                mp.start();
                 if (Estado2.getText() == "" || Estado2.getText() == SeleccionEstado.getText()){
                     //Boton sin texto no hacer nada
                 }else {
@@ -129,6 +147,9 @@ public class juego extends AppCompatActivity {
         BE3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //Sonido
+                mp.start();
                 if (Estado3.getText() == "" || Estado3.getText() == SeleccionEstado.getText()){
                     //Boton sin texto no hacer nada
                 }else {
@@ -146,6 +167,9 @@ public class juego extends AppCompatActivity {
         BC1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //Sonido
+                mp.start();
                 if (Capital1.getText() == "" || Capital1.getText() == SeleccionCapital.getText()){
                     //Boton sin texto no hacer nada
                 }else {
@@ -163,6 +187,9 @@ public class juego extends AppCompatActivity {
         BC2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //Sonido
+                mp.start();
                 if (Capital2.getText() == "" || Capital2.getText() == SeleccionCapital.getText()){
                     //Boton sin texto no hacer nada
                 }else {
@@ -180,6 +207,9 @@ public class juego extends AppCompatActivity {
         BC3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //Sonido
+                mp.start();
                 if (Capital3.getText() == "" || Capital3.getText() == SeleccionCapital.getText()){
                     //Boton sin texto no hacer nada
                 }else {
@@ -257,6 +287,8 @@ public class juego extends AppCompatActivity {
             //Reinicia el contador del boton a 0
             AppInicio = 0;
         }else {
+            //Si fallaste sonido feo
+            mperror.start();
             Califica.setText("Fallaste");
             Califica.setBackgroundDrawable(getResources().getDrawable(R.drawable.b_fallaste));
             SeleccionEstado.setText("Estado");
@@ -501,6 +533,10 @@ public class juego extends AppCompatActivity {
     //Finaliza el Activiti principal
     public void FinalizaActivity(){
         if (Vidas == 0){
+            //Evita el doble clic al finalizar la actividad
+            if (SystemClock.elapsedRealtime() - mLastClickTime < 1000){
+                return; }
+            mLastClickTime = SystemClock.elapsedRealtime();
 
             registrarUsuariosSQL();
 
