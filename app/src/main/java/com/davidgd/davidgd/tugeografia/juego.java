@@ -560,7 +560,6 @@ public class juego extends AppCompatActivity {
     public void IniciaVidas() {
         TotalVidas.setText("Vidas: "+Vidas);
     }
-
     //Guarda en la base de datos, se usa en el metodo FinalizaActivity
     private void registrarUsuariosSQL() {
         //abre la base de datos para escritura
