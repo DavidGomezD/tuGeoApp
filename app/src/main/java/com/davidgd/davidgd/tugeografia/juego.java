@@ -13,6 +13,12 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+
 import com.davidgd.davidgd.tugeografia.utilidades.Utilidades;
 
 import java.util.Random;
@@ -51,6 +57,9 @@ public class juego extends AppCompatActivity {
     Integer ale2 = aleatorio.nextInt(ArregloEstados.length-1);
     Integer ale3 = aleatorio.nextInt(ArregloEstados.length-1);
 
+    //Anuncio
+    private AdView mAdView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +69,17 @@ public class juego extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_juego);
+
+        //Codigo de anuncio
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         //Conexion a los TextView
         Estado1 = (TextView) findViewById(R.id.textView);
