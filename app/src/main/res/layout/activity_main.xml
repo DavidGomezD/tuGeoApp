@@ -10,7 +10,6 @@
         android:id="@+id/bjugar"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:background="@drawable/btn_redondo"
         android:text="Jugar"
         android:textAllCaps="false"
@@ -24,7 +23,6 @@
         android:id="@+id/botonInformacion"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
         android:background="@drawable/btn_redondo"
         android:text="Información"
         android:textAllCaps="false"
@@ -33,6 +31,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/botonEstados"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_redondo"
+        android:text="Estados"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/botonInformacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/bjugar" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -45,6 +57,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.41000003"
         app:srcCompat="@drawable/mapache" />
+
+
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
@@ -59,5 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

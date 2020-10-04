@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     MediaPlayer mp;
 
-    Button bjugar, btnInformacion;
+    Button bjugar, btnInformacion, btnEstados;
 
     private AdView mAdView;
 
@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         //Id de los botones
         bjugar = (Button) findViewById(R.id.bjugar);
         btnInformacion = (Button) findViewById(R.id.botonInformacion);
+        btnEstados = (Button) findViewById(R.id.botonEstados);
 
         //Sonido, nunca poner mayusculas en el nombre del sonido
         mp = MediaPlayer.create(this, R.raw.clic);
@@ -94,6 +95,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnEstados.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Evita el doble clic
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 1000){
+                    return; }
+                mLastClickTime = SystemClock.elapsedRealtime();
+
+                //Activa el sonido
+                mp.start();
+
+                //iniciamos el cambio de actividad
+                Intent i = new Intent(MainActivity.this, datosEstados.class);
+                startActivity(i);
+
+            }
+        });
+
+    //Fin del oncreate
     }
 
 }

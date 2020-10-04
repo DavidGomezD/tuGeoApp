@@ -10,18 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".juego"
+            android:name=".datosEstados"
             android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".juego"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".informacion"
             android:screenOrientation="landscape" />
-
         <activity
             android:name=".SegundaActividad"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="landscape" /> <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
 
-        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
-        <!--Mi id:ca-app-pub-8753253937552761~7208639782  -->
+        <!-- Mi id:ca-app-pub-8753253937552761~7208639782 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-8753253937552761~7208639782" />

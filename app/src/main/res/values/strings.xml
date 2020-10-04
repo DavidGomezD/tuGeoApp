@@ -1,3 +1,74 @@
 <resources>
     <string name="app_name">Tu Geografía, Estados y Capitales de México</string>
+
+    <string name="Estado">Estado</string>
+    <string name="Capital">Capital</string>
+
+    <!--Nombres de los estados-->
+    <string name="e0">Aguascalientes</string>
+    <string name="e1">Baja California</string>
+    <string name="e2">Baja California Sur</string>
+    <string name="e3">Campeche</string>
+    <string name="e4">Chihuahua</string>
+    <string name="e5">Chiapas</string>
+    <string name="e6">Ciudad de México</string>
+    <string name="e7">Coahuila</string>
+    <string name="e8">Colima</string>
+    <string name="e9">Durango</string>
+    <string name="e10">Estado de México</string>
+    <string name="e11">Guanajuato</string>
+    <string name="e12">Guerrero</string>
+    <string name="e13">Hidalgo</string>
+    <string name="e14">Jalisco</string>
+    <string name="e15">Michoacán</string>
+    <string name="e16">Morelos</string>
+    <string name="e17">Nayarit</string>
+    <string name="e18">Nuevo León</string>
+    <string name="e19">Oaxaca</string>
+    <string name="e20">Puebla</string>
+    <string name="e21">Querétaro</string>
+    <string name="e22">Quintana Roo</string>
+    <string name="e23">San Luis Potosí</string>
+    <string name="e24">Sinaloa</string>
+    <string name="e25">Sonora</string>
+    <string name="e26">Tabasco</string>
+    <string name="e27">Tamaulipas</string>
+    <string name="e28">Tlaxcala</string>
+    <string name="e29">Veracruz</string>
+    <string name="e30">Yucatán</string>
+    <string name="e31">Zacatecas</string>
+
+    <string name="c0">Aguascalientes</string>
+    <string name="c1">Mexicali</string>
+    <string name="c2">La Paz</string>
+    <string name="c3">San Francisco de Campeche</string>
+    <string name="c4">Chihuahua</string>
+    <string name="c5">Tuxtla Gutiérrez</string>
+    <string name="c6">Ciudad de México</string>
+    <string name="c7">Saltillo</string>
+    <string name="c8">Colima</string>
+    <string name="c9">Victoria Durango</string>
+    <string name="c10">Toluca de Lerdo</string>
+    <string name="c11">Guanajuato</string>
+    <string name="c12">Chilpancingo de los Bravos</string>
+    <string name="c13">Pachuca de Soto</string>
+    <string name="c14">Guadalajara</string>
+    <string name="c15">Morelia</string>
+    <string name="c16">Cuernavaca</string>
+    <string name="c17">Tepic</string>
+    <string name="c18">Monterrey</string>
+    <string name="c19">Oaxaca de Juárez</string>
+    <string name="c20">Puebla de Zaragoza</string>
+    <string name="c21">Santiago de Querétaro</string>
+    <string name="c22">Chetumal</string>
+    <string name="c23">San Luis Potosí</string>
+    <string name="c24">Culiacán Rosales</string>
+    <string name="c25">Hermosillo</string>
+    <string name="c26">Villahermosa</string>
+    <string name="c27">Ciudad Victoria</string>
+    <string name="c28">Tlaxcala de Xicohténcatl</string>
+    <string name="c29">Xalapa-Enríquez</string>
+    <string name="c30">Mérida</string>
+    <string name="c31">Zacatecas</string>
+
 </resources>
