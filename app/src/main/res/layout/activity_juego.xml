@@ -74,12 +74,12 @@
 
     <Button
         android:id="@+id/textView9"
-        android:layout_width="150dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/b_encendido"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_redondo"
         android:text="Relaciona las columnas"
-        android:textColor="#000"
+        android:textColor="#fff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -92,7 +92,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="12dp"
         android:text="TextView"
-        android:textColor="#000"
+        android:textColor="#fff"
         app:layout_constraintStart_toEndOf="@+id/button13"
         app:layout_constraintTop_toTopOf="@+id/button13" />
 
@@ -103,7 +103,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="12dp"
         android:text="TextView"
-        android:textColor="#000"
+        android:textColor="#fff"
         app:layout_constraintStart_toEndOf="@+id/button14"
         app:layout_constraintTop_toTopOf="@+id/button14" />
 
@@ -114,7 +114,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="12dp"
         android:text="TextView"
-        android:textColor="#000"
+        android:textColor="#fff"
         app:layout_constraintStart_toEndOf="@+id/button15"
         app:layout_constraintTop_toTopOf="@+id/button15" />
 
@@ -125,7 +125,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="10dp"
         android:text="TextView"
-        android:textColor="#000"
+        android:textColor="#fff"
         app:layout_constraintEnd_toStartOf="@+id/button16"
         app:layout_constraintTop_toTopOf="@+id/button16" />
 
@@ -136,7 +136,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="10dp"
         android:text="TextView"
-        android:textColor="#000"
+        android:textColor="#fff"
         app:layout_constraintEnd_toStartOf="@+id/button17"
         app:layout_constraintTop_toTopOf="@+id/button17" />
 
@@ -147,7 +147,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="10dp"
         android:text="TextView"
-        android:textColor="#000"
+        android:textColor="#fff"
         app:layout_constraintEnd_toStartOf="@+id/button18"
         app:layout_constraintTop_toTopOf="@+id/button18" />
 
@@ -156,24 +156,24 @@
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="4dp"
         android:text="Estados"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         android:text="Capitales"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <Button
         android:id="@+id/textView10"
@@ -181,8 +181,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="5dp"
-        android:background="@drawable/b_puntos"
+        android:background="@drawable/btn_redondo"
         android:text="Puntos: 0"
+        android:textColor="#fff"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -193,7 +194,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="5dp"
-        android:background="@drawable/b_vida"
+        android:background="@drawable/btn_redondo"
         android:text="Vidas: 0"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
