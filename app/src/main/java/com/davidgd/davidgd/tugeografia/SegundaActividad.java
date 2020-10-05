@@ -33,8 +33,7 @@ public class SegundaActividad extends AppCompatActivity {
 
     ConexionSQLiteHelper conn;
 
-    //Anuncio
-    private AdView mAdView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,16 +44,7 @@ public class SegundaActividad extends AppCompatActivity {
 
         setContentView(R.layout.activity_segunda_actividad);
 
-        //Anuncio
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
 
-        mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
 
         conn = new ConexionSQLiteHelper(getApplicationContext(),"bd_usuarios", null, 1);
 
