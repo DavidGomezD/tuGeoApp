@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class datosEstados extends AppCompatActivity {
@@ -28,6 +29,9 @@ public class datosEstados extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_datos_estados);
+
+        //Conexion a la imagen
+        final ImageView map = (ImageView) findViewById(R.id.imageMapa) ;
 
         //Conexion a los tv
         Estado = (TextView) findViewById(R.id.tvEstado);
@@ -80,6 +84,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e0);
                 Capital.setText(R.string.c0);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx0);
             }
         });
 
@@ -91,6 +98,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e1);
                 Capital.setText(R.string.c1);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx1);
             }
         });
 
@@ -103,6 +113,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e2);
                 Capital.setText(R.string.c2);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx2);
             }
         });
 
@@ -115,6 +128,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e3);
                 Capital.setText(R.string.c3);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx3);
             }
         });
 
@@ -127,6 +143,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e4);
                 Capital.setText(R.string.c4);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx4);
             }
         });
 
@@ -139,6 +158,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e5);
                 Capital.setText(R.string.c5);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx5);
             }
         });
 
@@ -151,6 +173,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e6);
                 Capital.setText(R.string.c6);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx6);
             }
         });
 
@@ -163,6 +188,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e7);
                 Capital.setText(R.string.c7);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx7);
             }
         });
 
@@ -175,6 +203,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e8);
                 Capital.setText(R.string.c8);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx8);
             }
         });
 
@@ -187,6 +218,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e9);
                 Capital.setText(R.string.c9);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx9);
             }
         });
 
@@ -199,6 +233,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e10);
                 Capital.setText(R.string.c10);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx10);
             }
         });
 
@@ -211,6 +248,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e11);
                 Capital.setText(R.string.c11);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx11);
             }
         });
 
@@ -223,6 +263,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e12);
                 Capital.setText(R.string.c12);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx12);
             }
         });
 
@@ -235,6 +278,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e13);
                 Capital.setText(R.string.c13);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx13);
             }
         });
 
@@ -247,6 +293,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e14);
                 Capital.setText(R.string.c14);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx14);
             }
         });
 
@@ -259,6 +308,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e15);
                 Capital.setText(R.string.c15);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx15);
             }
         });
 
@@ -271,6 +323,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e16);
                 Capital.setText(R.string.c16);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx16);
             }
         });
 
@@ -283,6 +338,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e17);
                 Capital.setText(R.string.c17);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx17);
             }
         });
 
@@ -295,6 +353,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e18);
                 Capital.setText(R.string.c18);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx18);
             }
         });
 
@@ -307,6 +368,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e19);
                 Capital.setText(R.string.c19);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx19);
             }
         });
 
@@ -319,6 +383,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e20);
                 Capital.setText(R.string.c20);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx20);
             }
         });
 
@@ -331,6 +398,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e21);
                 Capital.setText(R.string.c21);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx21);
             }
         });
 
@@ -343,6 +413,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e22);
                 Capital.setText(R.string.c22);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx22);
             }
         });
 
@@ -355,6 +428,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e23);
                 Capital.setText(R.string.c23);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx23);
             }
         });
 
@@ -367,6 +443,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e24);
                 Capital.setText(R.string.c24);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx24);
             }
         });
 
@@ -379,6 +458,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e25);
                 Capital.setText(R.string.c25);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx25);
             }
         });
 
@@ -391,6 +473,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e26);
                 Capital.setText(R.string.c26);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx26);
             }
         });
 
@@ -403,6 +488,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e27);
                 Capital.setText(R.string.c27);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx27);
             }
         });
 
@@ -415,6 +503,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e28);
                 Capital.setText(R.string.c28);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx28);
             }
         });
 
@@ -427,6 +518,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e29);
                 Capital.setText(R.string.c29);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx29);
             }
         });
 
@@ -439,6 +533,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e30);
                 Capital.setText(R.string.c30);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx30);
             }
         });
 
@@ -451,6 +548,9 @@ public class datosEstados extends AppCompatActivity {
 
                 Estado.setText(R.string.e31);
                 Capital.setText(R.string.c31);
+
+                //Cambia la imagen del mapa
+                map.setImageResource(R.drawable.mapamx31);
             }
         });
     }
