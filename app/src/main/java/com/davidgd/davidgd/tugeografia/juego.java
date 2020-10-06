@@ -433,6 +433,9 @@ public class juego extends AppCompatActivity {
         ArregloCapitales[31] = "CDMX";
         ArregloCapitales[32] = "Disminuye a 3 el arreglo";
 
+        //Cambia el valor del primer aleatorio y evita que se repita en la siguiente ronda
+        ale1 = aleatorio.nextInt(ArregloEstados.length - 1);
+
         //Evita que los 3 aleatorios se repitan
         do {
             ale2 = aleatorio.nextInt(ArregloEstados.length - 1);
