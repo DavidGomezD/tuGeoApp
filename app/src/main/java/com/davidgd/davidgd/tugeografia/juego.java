@@ -360,7 +360,8 @@ public class juego extends AppCompatActivity {
         Puntos --;
         Vidas --;
         Marcador.setText("Puntos: " + Puntos);
-        TotalVidas.setText("Vidas: " + Vidas);
+        //TotalVidas.setText("Vidas: " + Vidas);
+        IniciaVidas();
     }
     //LLena los arreglos
     public void LLenaLosArreglos(){
@@ -581,7 +582,17 @@ public class juego extends AppCompatActivity {
     }
     //Inicia las vidas
     public void IniciaVidas() {
-        TotalVidas.setText("Vidas: "+Vidas);
+        //TotalVidas.setText("Vidas: "+Vidas);
+        if (Vidas == 3){
+            TotalVidas.setText("\uD83E\uDDE1️  ️ \uD83E\uDDE1️️   \uD83E\uDDE1️");
+        }
+        if (Vidas == 2){
+            TotalVidas.setText("\uD83D\uDDA4   ️\uD83E\uDDE1️   \uD83E\uDDE1️");
+        }
+        if (Vidas == 1){
+            TotalVidas.setText("\uD83D\uDDA4   \uD83D\uDDA4   \uD83E\uDDE1️");
+        }
+
     }
     //Guarda en la base de datos, se usa en el metodo FinalizaActivity
     private void registrarUsuariosSQL() {
