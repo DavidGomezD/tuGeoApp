@@ -25,7 +25,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e0"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -35,7 +35,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e1"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -45,7 +45,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e2"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -55,7 +55,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e3"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -65,7 +65,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e4"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -75,7 +75,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e5"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -85,7 +85,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e6"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -95,7 +95,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e7"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -105,7 +105,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e8"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -115,7 +115,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e9"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -125,7 +125,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e10"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -135,7 +135,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e11"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -145,7 +145,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e12"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -155,7 +155,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e13"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -165,7 +165,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e14"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -175,7 +175,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e15"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -185,7 +185,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e16"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -195,7 +195,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e17"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -205,7 +205,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e18"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -215,7 +215,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e19"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -225,7 +225,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e20"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -235,7 +235,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e21"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -245,7 +245,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e22"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -255,7 +255,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e23"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -265,7 +265,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e24"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -275,7 +275,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e25"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -285,7 +285,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e26"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -295,7 +295,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e27"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -305,7 +305,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e28"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -315,7 +315,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e29"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -325,7 +325,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e30"
                 android:textAllCaps="false"
                 android:textColor="#fff" />
@@ -335,7 +335,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/btn_redondo"
+                android:background="@drawable/animaboton"
                 android:text="@string/e31"
                 android:textAllCaps="false"
                 android:textColor="#fff" />

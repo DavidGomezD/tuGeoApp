@@ -10,7 +10,7 @@
         android:id="@+id/bjugar"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/btn_redondo"
+        android:background="@drawable/animaboton"
         android:text="Jugar"
         android:textAllCaps="false"
         android:textColor="#fff"
@@ -23,7 +23,7 @@
         android:id="@+id/botonInformacion"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/btn_redondo"
+        android:background="@drawable/animaboton"
         android:text="Información"
         android:textAllCaps="false"
         android:textColor="#fff"
@@ -36,7 +36,7 @@
         android:id="@+id/botonEstados"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/btn_redondo"
+        android:background="@drawable/animaboton"
         android:text="Mapa"
         android:textAllCaps="false"
         android:textColor="#fff"
@@ -59,14 +59,12 @@
         app:srcCompat="@drawable/mapache" />
 
 
-
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="5dp"
         app:adSize="BANNER"
         app:adUnitId="ca-app-pub-8753253937552761/9985672900"
         app:layout_constraintBottom_toBottomOf="parent"
