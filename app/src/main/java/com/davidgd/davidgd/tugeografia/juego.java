@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
@@ -60,6 +61,8 @@ public class juego extends AppCompatActivity {
     //Anuncio
     private AdView mAdView;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -91,7 +94,6 @@ public class juego extends AppCompatActivity {
         Capital3 = (TextView) findViewById(R.id.textView6);
 
         Marcador = (TextView) findViewById(R.id.textView10);
-        TotalVidas = (TextView) findViewById(R.id.txtVidas);
 
         SeleccionEstado = (TextView) findViewById(R.id.textView7);
         SeleccionCapital = (TextView) findViewById(R.id.textView8);
@@ -360,7 +362,6 @@ public class juego extends AppCompatActivity {
         Puntos --;
         Vidas --;
         Marcador.setText("Puntos: " + Puntos);
-        //TotalVidas.setText("Vidas: " + Vidas);
         IniciaVidas();
     }
     //LLena los arreglos
@@ -580,17 +581,26 @@ public class juego extends AppCompatActivity {
         BC2.setBackgroundDrawable(getResources().getDrawable(R.drawable.btn_redondo));
         BC3.setBackgroundDrawable(getResources().getDrawable(R.drawable.btn_redondo));
     }
-    //Inicia las vidas
+    //Inicia las vidas y cambia de color los corazones
     public void IniciaVidas() {
-        //TotalVidas.setText("Vidas: "+Vidas);
-        if (Vidas == 3){
-            TotalVidas.setText("\uD83E\uDDE1️  ️ \uD83E\uDDE1️️   \uD83E\uDDE1️");
-        }
+
+        //Conexion a los corazones
+        ImageView cora1 = (ImageView) findViewById(R.id.imageCora1);
+        ImageView cora2 = (ImageView) findViewById(R.id.imageCora2);
+        ImageView cora3 = (ImageView) findViewById(R.id.imageCora3);
+
         if (Vidas == 2){
-            TotalVidas.setText("\uD83D\uDDA4   ️\uD83E\uDDE1️   \uD83E\uDDE1️");
+            //Cambia la imagen del corazón
+
+            cora1.setImageResource(R.drawable.corazonfin);
         }
         if (Vidas == 1){
-            TotalVidas.setText("\uD83D\uDDA4   \uD83D\uDDA4   \uD83E\uDDE1️");
+            //Cambia la imagen del corazón
+            cora2.setImageResource(R.drawable.corazonfin);
+        }
+        if (Vidas == 0){
+            //Cambia la imagen del corazón
+            cora3.setImageResource(R.drawable.corazonfin);
         }
 
     }

@@ -6,6 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".juego">
 
+    <ImageView
+        android:id="@+id/imageCora2"
+        android:layout_width="43dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:srcCompat="@drawable/corazon" />
+
+    <ImageView
+        android:id="@+id/imageCora1"
+        android:layout_width="43dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageCora2"
+        app:layout_constraintTop_toTopOf="@+id/imageCora2"
+        app:srcCompat="@drawable/corazon" />
+
     <Button
         android:id="@+id/button13"
         android:layout_width="70dp"
@@ -184,19 +204,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/txtVidas"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/sin_fondo"
-        android:text="🧡️  ️ 🧡️️   🧡"
-        android:textSize="18dp"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="wrap_content"
@@ -209,5 +216,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+    <ImageView
+        android:id="@+id/imageCora3"
+        android:layout_width="43dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@+id/imageCora2"
+        app:layout_constraintTop_toTopOf="@+id/imageCora2"
+        app:srcCompat="@drawable/corazon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
