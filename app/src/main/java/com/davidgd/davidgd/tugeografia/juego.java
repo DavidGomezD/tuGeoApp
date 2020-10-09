@@ -83,8 +83,8 @@ public class juego extends AppCompatActivity {
             }
         });
         mInterstitialAd = new InterstitialAd(this);
-        //Anuncio de prueba ca-app-pub-3940256099942544/1033173712
-        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        //Aqui esta el codigo del anuncio [real]
+        mInterstitialAd.setAdUnitId("ca-app-pub-8753253937552761/6268417968");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
 
 
