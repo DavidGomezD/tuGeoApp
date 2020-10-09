@@ -1,8 +1,6 @@
 package com.davidgd.davidgd.tugeografia;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
@@ -13,16 +11,9 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-
 import com.davidgd.davidgd.tugeografia.utilidades.Utilidades;
 
-import java.util.Random;
+
 
 public class SegundaActividad extends AppCompatActivity {
 
@@ -33,8 +24,6 @@ public class SegundaActividad extends AppCompatActivity {
 
     ConexionSQLiteHelper conn;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,13 +33,7 @@ public class SegundaActividad extends AppCompatActivity {
 
         setContentView(R.layout.activity_segunda_actividad);
 
-
-
         conn = new ConexionSQLiteHelper(getApplicationContext(),"bd_usuarios", null, 1);
-
-        //Poner icono en action Bar
-        //getSupportActionBar().setDisplayShowHomeEnabled(true);
-        //getSupportActionBar().setIcon(R.mipmap.ic_launcher);
 
         TusPuntos = (TextView) findViewById(R.id.TuPuntuacion);
         TuRecord = (TextView) findViewById(R.id.TuRecord);

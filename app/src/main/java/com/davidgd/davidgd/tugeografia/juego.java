@@ -7,24 +7,27 @@ import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-
 import com.davidgd.davidgd.tugeografia.utilidades.Utilidades;
-
 import java.util.Random;
 
+
 public class juego extends AppCompatActivity {
+
+    //Anuncio pantalla completa
+    private InterstitialAd mInterstitialAd;
 
     //Evita el doble clic
     private long mLastClickTime = 0;
@@ -72,6 +75,18 @@ public class juego extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_juego);
+
+        //Anuncio Interstitial
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        mInterstitialAd = new InterstitialAd(this);
+        //Anuncio de prueba ca-app-pub-3940256099942544/1033173712
+        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+
 
         //Codigo de anuncio
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
@@ -565,11 +580,18 @@ public class juego extends AppCompatActivity {
 
             registrarUsuariosSQL();
 
+            //Cambia al siguiente activity
             Intent i = new Intent(this, SegundaActividad.class);
             i.putExtra("MandarPuntos", Puntos.toString());
             startActivity(i);
             //termina la actividad para que no se pueda regresar
             finish();
+
+            //Inicia el anuncio
+            if (mInterstitialAd.isLoaded()) {
+                //ejecuta el anuncio cargado
+                mInterstitialAd.show();
+            }
         }
     }
     //Cambia el color de los botones a anaranjado

@@ -410,7 +410,7 @@
                 app:adSize="BANNER"
                 android:layout_margin="10dp"
                 android:layout_gravity="center"
-                app:adUnitId="ca-app-pub-8753253937552761/7638960529"
+                app:adUnitId="@string/bannerPrueba"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"

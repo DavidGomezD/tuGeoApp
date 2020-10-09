@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/imageCora2"
         android:layout_width="43dp"
-        android:layout_height="32dp"
+        android:layout_height="28dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -20,9 +20,18 @@
     <ImageView
         android:id="@+id/imageCora1"
         android:layout_width="43dp"
-        android:layout_height="32dp"
+        android:layout_height="28dp"
         android:layout_marginEnd="15dp"
         app:layout_constraintEnd_toStartOf="@+id/imageCora2"
+        app:layout_constraintTop_toTopOf="@+id/imageCora2"
+        app:srcCompat="@drawable/corazon" />
+
+    <ImageView
+        android:id="@+id/imageCora3"
+        android:layout_width="43dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@+id/imageCora2"
         app:layout_constraintTop_toTopOf="@+id/imageCora2"
         app:srcCompat="@drawable/corazon" />
 
@@ -31,7 +40,7 @@
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/btn_redondo"
         android:text="A"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,7 +72,7 @@
         android:id="@+id/button16"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/btn_redondo"
         android:text="D"
@@ -99,6 +108,7 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/btn_redondo"
         android:text="Relaciona las columnas"
+        android:textSize="18dp"
         android:textColor="#fff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -199,6 +209,7 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/sin_fondo"
         android:text="Puntos: 0"
+        android:textSize="20dp"
         android:textAllCaps="false"
         android:textColor="#fff"
         app:layout_constraintStart_toStartOf="parent"
@@ -211,19 +222,35 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-8753253937552761/9998704014"
+        app:adUnitId="@string/bannerPrueba"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
 
-    <ImageView
-        android:id="@+id/imageCora3"
-        android:layout_width="43dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="15dp"
-        app:layout_constraintStart_toEndOf="@+id/imageCora2"
-        app:layout_constraintTop_toTopOf="@+id/imageCora2"
-        app:srcCompat="@drawable/corazon" />
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Estados"
+        android:textSize="18dp"
+        android:textColor="@color/blanco"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/button13"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/Capitales"
+        android:textColor="@color/blanco"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/button16"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

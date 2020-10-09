@@ -20,8 +20,9 @@
             android:screenOrientation="landscape" />
         <activity
             android:name=".SegundaActividad"
-            android:screenOrientation="landscape" /> <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+            android:screenOrientation="landscape" />
 
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
         <!-- Mi id:ca-app-pub-8753253937552761~7208639782 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"

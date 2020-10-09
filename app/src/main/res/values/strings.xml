@@ -1,8 +1,21 @@
 <resources>
     <string name="app_name">Tu Geografía, Estados y Capitales de México</string>
 
+    <!--Anuncios de prueba-->
+    <string name="bannerPrueba">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="intersticialPrueba">ca-app-pub-3940256099942544/1033173712</string>
+
+    <!--Anuncios para produccion-->
+    <string name="bannerInicial">ca-app-pub-8753253937552761/9985672900</string>
+    <string name="bannerJuego">ca-app-pub-8753253937552761/9998704014</string>
+    <string name="bannerMapa">ca-app-pub-8753253937552761/7638960529</string>
+    <string name="intersticialJuegoFinal">ca-app-pub-8753253937552761/6268417968</string>
+
+    <!--Palabras repetidas en la app-->
     <string name="Estado">Estado</string>
     <string name="Capital">Capital</string>
+    <string name="Estados">Estados</string>
+    <string name="Capitales">Capitales</string>
 
     <!--Nombres de los estados-->
     <string name="e0">Aguascalientes</string>
