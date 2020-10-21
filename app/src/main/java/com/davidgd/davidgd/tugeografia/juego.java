@@ -1,9 +1,11 @@
 package com.davidgd.davidgd.tugeografia;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.drawable.AnimationDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -16,7 +18,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
@@ -25,9 +26,6 @@ import java.util.Random;
 
 
 public class juego extends AppCompatActivity {
-
-    //Anuncio pantalla completa
-    private InterstitialAd mInterstitialAd;
 
     //Evita el doble clic
     private long mLastClickTime = 0;
@@ -76,17 +74,12 @@ public class juego extends AppCompatActivity {
 
         setContentView(R.layout.activity_juego);
 
-        //Anuncio Interstitial
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
-        mInterstitialAd = new InterstitialAd(this);
-        //Aqui esta el codigo del anuncio [real]
-        mInterstitialAd.setAdUnitId("ca-app-pub-8753253937552761/6268417968");
-        mInterstitialAd.loadAd(new AdRequest.Builder().build());
-
+        //Animacion fondo
+        ConstraintLayout constraintLayout = findViewById(R.id.layout);
+        AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(2000);
+        animationDrawable.setExitFadeDuration(4000);
+        animationDrawable.start();
 
         //Codigo de anuncio
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
@@ -587,11 +580,6 @@ public class juego extends AppCompatActivity {
             //termina la actividad para que no se pueda regresar
             finish();
 
-            //Inicia el anuncio
-            if (mInterstitialAd.isLoaded()) {
-                //ejecuta el anuncio cargado
-                mInterstitialAd.show();
-            }
         }
     }
     //Cambia el color de los botones a anaranjado

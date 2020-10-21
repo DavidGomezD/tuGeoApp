@@ -3,13 +3,11 @@
 
     <!--Anuncios de prueba-->
     <string name="bannerPrueba">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="intersticialPrueba">ca-app-pub-3940256099942544/1033173712</string>
 
     <!--Anuncios para produccion-->
     <string name="bannerInicial">ca-app-pub-8753253937552761/9985672900</string>
     <string name="bannerJuego">ca-app-pub-8753253937552761/9998704014</string>
     <string name="bannerMapa">ca-app-pub-8753253937552761/7638960529</string>
-    <string name="intersticialJuegoFinal">ca-app-pub-8753253937552761/6268417968</string>
 
     <!--Palabras repetidas en la app-->
     <string name="Estado">Estado</string>
@@ -83,5 +81,20 @@
     <string name="c29">Xalapa-Enríquez</string>
     <string name="c30">Mérida</string>
     <string name="c31">Zacatecas</string>
+
+    <!--Texto de los botones-->
+    <string name="jugar">Jugar</string>
+    <string name="mapa">Mapa</string>
+    <string name="cJugar">¡Cómo jugar!</string>
+
+    <string name="comoJugar">¡Cómo jugar!
+
+\n\n-Relaciona la columna de Estados con la de Capitales para obtener puntos.
+\n-Si fallas en el juego se te restara un punto y una vida.
+\n-El juego termina al perder 3 vidas.
+
+\n\nPráctica con esta aplicación para mejorar tu conocimiento.
+
+    </string>
 
 </resources>
